@@ -1,0 +1,33 @@
+<view class="headerDetails">
+  <view class="header">
+    <input type="text" placeholder='输入城市目的地、城市或景点' />
+    <navigator>添加日期</navigator>
+  </view>
+  <view class="card">
+    <navigator>布局</navigator>
+    <navigator>人数</navigator>
+    <navigator>价格</navigator>
+    <navigator>类型</navigator>
+  </view>
+</view>
+<view>
+ <text class='searchHouse'>浏览全部300+房源</text>
+ <view wx:for="{{cardlist}}" wx:key="item.id">
+ <!--轮播图-->
+  <swiper autoplay interval='2000' indicator-dots>
+    <swiper-item wx:for="{{imglist}}" wx:key="item.id">
+      <image src="{{item.img_url}}" mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>
+  <text>{{item.title}}</text>
+  <view>
+    <text class='cardTitle'>{{item.family_title}}</text>
+  </view>
+  <view class="">
+    <text>￥{{item.price}}·免费取消预订</text>
+  </view>
+  <view>
+    <text>★★★★★184</text>
+  </view>
+ </view>
+ </view>

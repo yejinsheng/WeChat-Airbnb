@@ -1,0 +1,125 @@
+<!--pages/aby_homeDetails/aby_homeDetails.wxml-->
+<view class="details">
+  <view class='detailsHeader'>
+    <navigator class="{{navActive==1?'active':''}}" bindtap='tosetScrollTop' data-index="0">详情</navigator>
+    <navigator class="{{navActive==2?'active':''}}" bindtap='tosetScrollTop' data-index="1">评价</navigator>
+    <navigator class="{{navActive==3?'active':''}}" bindtap='tosetScrollTop' data-index="2">位置</navigator>
+    <navigator class="{{navActive==4?'active':''}}" bindtap='tosetScrollTop' data-index="3">须知</navigator>
+    <navigator class="{{navActive==5?'active':''}}" bindtap='tosetScrollTop' data-index="4">房东</navigator>
+  </view>
+</view>
+<scroll-view style="height:{{scrollHeight}}px" bindscroll="scroll" scroll-y="true" scroll-top="{{scrollTop}}">
+  <view class="scrollView" id="scrollView1">
+    <view>
+      <image src="http://localhost:8000/img/9a08870e-a7f3-4c47-b0bd-0374d9e4f08c.jpg" />
+      <text>干尼亚·洞穴</text>
+      <view>
+        <text>Luxuriousstone villa in create</text>
+      </view>
+      <view>
+        <text>1间卧室·1张床·1间卫生间·最多住2人</text>
+      </view>
+    </view>
+    <!--中间内容-->
+
+    <view class="middle">
+      <view class='detailed'>
+        <text>卧室1</text>
+        <view class='bed'>
+          <image src="http://localhost:8000/tubiao/bed.png" />
+        </view>
+        <view>
+          <text>1张特大号床</text>
+        </view>
+      </view>
+      <text class='shenglue'>Enjoy your stay in Costa Rica how it should be!Nestied int...</text>
+      <navigator>查看更多房源介绍</navigator>
+      <view class="fd">
+        <view class='fdDetail'>
+          <image src="http://localhost:8000/tubiao/sha.png" />
+          <text class="fdTitle">超赞房东</text>
+          <text> 超赞房东经验丰富、评分很高，致力于为房客提供优质的住宿体验</text>
+        </view>
+        <view class="fdHouse">
+          <image src="http://localhost:8000/tubiao/house.png" />
+          <text class="fdTitle">整栋房屋</text>
+          <text> 无需与房东或房客共享空间，独享整个房源</text>
+        </view>
+        <view class="fdTime">
+          <image src="http://localhost:8000/tubiao/time.png" />
+          <text class="fdTitle">入住退房</text>
+          <text> 入住时间14:00 - 21:00·退房时间 10:00</text>
+        </view>
+        <view class="fdKey">
+          <image src="http://localhost:8000/tubiao/key.png" />
+          <text class="fdTitle">自助入住</text>
+          <text> 通过密码锁自助入住</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="scrollView" id="scrollView2">
+    <!--房客评价-->
+    <view class="gussComment">
+      <text class="guss">房客评价</text>
+      <view class="touxiang">
+        <image src="http://localhost:8000/touxiang/default.png" />
+        <text>Erhard</text>
+        <text>2018年11月</text>
+        <view>
+          Das Baumhaus ist ein Traum.Mitten im Dschungel kann man herrlich entspanen.Nach Quepos sind esca...
+        </view>
+        <navigator>查看全部351条访客真实评价</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="scrollView" style="height:300px" id="scrollView3">
+    <!--房源位置-->
+    <view class="housePlace">
+      <view class='guss'>
+        <text>房源位置</text>
+      </view>
+      <text class='wentou'>Quepos</text>
+      <text class='wen'>,蓬塔雷纳斯省，哥斯达黎加</text>
+      <view>
+        <text>Very peaceful neighbourhood:Just nature all around us,lots...</text>
+      </view>
+      <navigator>查看更多</navigator>
+
+      <view class='placeDetails'>
+        <text>出行信息</text>
+        <view>
+          <text>The property is about 15 minutes walking or 3 minutes by car...</text>
+        </view>
+        <navigator class='guss'>查看更多</navigator>
+        <image src="http://localhost:8000/tubiao/map.png" />
+      </view>
+    </view>
+  </view>
+  <view class="scrollView"  style="height:300px" id="scrollView4">
+    <!--预订须知-->
+    <view>
+
+    </view>
+  </view>
+  <view class="scrollView"  style="height:300px" id="scrollView5">
+    <!--房东-->
+    <view>
+
+    </view>
+  </view>
+</scroll-view>
+<!--底部-->
+<view class="footDetails">
+  <text>￥395 每晚</text>
+  <view class="stop-star">
+    <view class="start-after">☆☆☆☆☆</view>
+    <view class="start-before">★★★★★</view>
+  </view>
+  <view class='liulan'>
+    <text>136</text>
+  </view>
+  <view class="seeDate">
+    <button>查看可订日期</button>
+  </view>
+</view>

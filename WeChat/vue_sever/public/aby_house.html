@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <div class="zanpin">
+
+    </div>
+    <div class="btn-left">
+
+    </div>
+    <div class="btn-right">
+
+    </div>
+    <div class="zhishi">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <script>
+            for(var i=0;i<res.length;i++){
+                html+=`
+                <div>
+                    <div class="my-posi">
+                        <a href="#"><img src="${res[i].img}" alt=""></a>
+                        <div class="detail">
+                            <a href="#"><p>${res[i].subtitle}</p></a>
+                        </div>
+                    </div>
+                </div>`
+            } 
+        $(".btn-right").click(function(){
+            $(".zanpin>div>.my-posi").css("margin-left",-1006)
+            $(".btn-right").css("display","none")
+            $(".btn-left").css("display","block")
+        })
+        $(".btn-left").click(function(){
+            $(".zanpin>div>.my-posi").css("margin-left",0)
+            $(".btn-left").css("display","none")
+            $(".btn-right").css("display","block")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* pages/aby_home/aby_home.wxss */
+.index_bigphoto{
+  background-image: url("http://localhost:8000/img/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg");
+  color: white;
+  font-size:29px;
+  background-size: 375px;
+  height:249px;background-repeat: no-repeat;border:1px solid red;
+}
+.whiteText{
+  position: absolute;top:117px;
+}
+.white{
+  position: absolute;top:153px;
+}
+.findHouse{
+  width:300px;
+  height:100%;
+  border:1px solid rebeccapurple;
+  margin-top: -50px;
+  background: #fff;
+  margin-left:20rpx;
+  
+}
+.inputPlace{
+  border-bottom: 1rpx solid #F5F5F5;
+  font-size:20px;
+  padding: 10px;
+}
+.houseDate{
+  margin-top:90rpx;
+
+}
+.backDate{
+  margin-left: 93rpx;
+}
+.houseDate button{
+  background: #00828A;
+  margin-top: 93rpx;
+}
+.searchHouse{
+  font-size: 32px;
+  color: #4A4A4A;
+  font-weight: bold;
+}
+.cardTitle{
+  font-size: 16px;
+  color: #4A4A4A;
+  font-weight: bold;
+}
+.getMore{
+  background-color: #00828A
+}

@@ -1,0 +1,244 @@
+
+/**{margin:0px;padding:0px;box-sizing:border-box;}*/
+body{width:100%;
+    }
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+#d1{
+    width:100%;
+    height:580px;
+    position:relative;
+}
+#d2{
+    background-size:100% 100%;
+    width:100%;
+    background-image:url("../img/41df549a-66b9-4202-bde0-31941e58c063.jpg");
+    background-repeat:no-repeat;
+    height:100%;
+    position:absolute;
+}
+#d3{
+    position:absolute;
+    left:360px;
+    top:150px;
+    width:600px;
+    height:400px;
+}
+#s1{
+    font: normal normal normal 45px "微软雅黑";
+    color:red;
+    float:left;
+}
+#s2{
+    font:normal normal bold 48px "微软雅黑";
+    color:white;
+    float:left;
+}
+#p1{
+    width:255px;
+    height:60px;
+    border-radius:30px;
+    background:red;
+    margin-top:137px;
+}
+#s3{
+    font:normal normal bold 20px "微软雅黑";
+    color:white;
+    padding:43px;
+    line-height:50px;
+}
+#d4{
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: right;
+}
+#d4 a .one{
+    color:red;
+    font:normal normal bold 20px "微软雅黑";
+    padding-right:30px;
+}
+#i1{
+    border:1px solid red;
+    width:887px;
+    height:44px;
+    margin-left: 46px;
+}
+#i2{
+    color:white;
+    line-height:48px;
+    background:red;
+    width:68px;
+    height:48px;
+    float:left;
+    position:absolute;
+    top:-2px;
+}
+#search2{
+    width:1200px;
+    position:relative;
+    margin:40px auto;
+}
+.biaoti{
+font-weight: bold;
+margin-top: 63px;
+}
+.searchAirbnb{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
+    float: left !important;
+    margin-bottom: 4px !important;
+    text-align: left !important;
+    width: 31% !important;
+    margin-right:2%;
+    height:72px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    border-image: initial !important;
+    border-radius: 3px !important;
+    padding: 0px !important;
+    overflow: hidden !important
+}
+._g1rqj60{
+    display: inline-block;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    min-width: 51.7771px !important;
+    box-shadow: none !important;
+    color: rgb(255, 255, 255) !important;
+    margin: 0px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    background: rgb(0, 132, 137) !important;
+    border-color: transparent
+}
+.searchAirbnb span{
+    font-weight: bold;
+    padding: 14px 16px;
+}
+.place{
+    padding:15px 0px;
+    width:700px;
+    background:#ddd;
+    /* padding:30px 0px; */
+}
+
+#hotPlace p{
+    opacity: .8;
+    margin: 0;
+    cursor: pointer;
+}
+#hotPlace p:hover{
+    opacity: 1;
+}
+#hotPlace .price{
+    padding:5px 0;
+    font-weight: bold;
+    color:#333;
+}
+#hotPlace .family_title{
+    color:#393939;
+}
+#hotPlace .title{
+    font-size: x-small;
+    color: #898989;
+}
+
+#hotPlace .xiang{
+    width:10%;
+}
+
+/* .place>a{
+    display:inline-block
+    color:black;
+	border:1px solid #ccc;
+	padding:5px 13px 5px 5px;
+	border-radius:5px;
+	background:#ddd;
+	margin:3px;
+} */
+.place>div{
+   
+}
+.place>a:first-child{
+    color:rgb(0, 132, 137) !important;
+}
+#sincere{
+    width: 100%;
+    background-image: url("../img/e36e06a9-f9a4-49a5-a94c-02134a8787c5.jpg");
+    background-repeat: no-repeat;
+    height: 344px;
+    position: relative;
+}
+.svg:not(:root) {
+    overflow: hidden;
+}
+#d6:after{content:"";clear:both;display:block;}
+.reg{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    z-index: 999;
+}
+#regDiv{
+    background:#FFF;
+    border:1px solid #eee;
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+}
+#regtable{
+    margin: 20px 50px;
+}
+#regDiv table td{
+    padding:10px 0;
+}
+#regDiv table tr td>input{
+    width:200px;
+    height:40px;
+    font-size:16px;
+}
+#regDiv table caption>h4{
+    margin-bottom:20px;
+}
+#logDiv{
+    background:#FFF;
+    border:1px solid #eee;
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    z-index: 999;
+}
+#logtable{
+    margin: 20px 50px;
+}
+#logtable td{
+    padding:10px 0;
+}
+#logDiv table tr input[type="button"]{
+    width:300px;
+    height:40px;
+    font-size:16px;
+}
+#logDiv table tr input[type="text"]{
+    width:300px;
+    height:40px;
+    border: 1px solid #9c9c9c;
+    padding-left:8px;
+    font-size:16px;
+}
+#logDiv #infoTd{font-size:12px;}
+#logDiv table tr input[type="checkbox"]{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}

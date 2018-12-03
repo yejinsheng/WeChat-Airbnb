@@ -1,0 +1,35 @@
+/* pages/aby_person/aby_person.wxss */
+.person{
+
+  width:300px;
+  height:100%;
+  border:1px solid royalblue;
+}
+.person image{
+  width:100px;
+  height:100px;
+}
+.personTou{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.resLogin{
+  margin-top:60rpx;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.resLogin button{
+  background: #01848C;
+}
+.personDetails{
+  height:100%;
+}
+.personDetails swiper{
+  height:344px;
+}
+.mydetails{
+  width:100%;
+  height:683rpx;
+}

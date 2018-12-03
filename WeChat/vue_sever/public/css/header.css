@@ -1,0 +1,21 @@
+#my_header{
+    margin-top: 40px;
+    text-align: right;
+    font-size:12px;
+}
+.house_header{
+    color:black;
+    font:normal normal bold 20px "微软雅黑";
+     padding-right:30px; 
+}
+.my_nav{
+    border-bottom:1px solid #eee;
+    width:100%;
+}
+.my_img>div>img:hover{
+    filter: brightness(140%);
+}
+._8tbpu3 {
+    font-family: Airmoji_Standalone !important;
+    font-weight: normal !important;
+}

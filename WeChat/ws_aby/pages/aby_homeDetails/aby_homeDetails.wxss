@@ -1,0 +1,128 @@
+/* pages/aby_homeDetails/aby_homeDetails.wxss */
+.details{
+  position:fixed;
+  width:100%;
+  z-index:100;
+  background: #FFF;
+}
+.detailsHeader .active{
+  color:aqua;
+}
+.detailsHeader{
+  display: flex;
+  justify-content:space-between;
+  background: white;
+  padding-right: 30px;
+  color:#999999;
+}
+.middle{
+  margin-left:17rpx;
+  margin-bottom: 150rpx;
+}
+.middle navigator{
+  color:#36907E;
+}
+.bed image{
+  width: 36px;
+  height:36px;
+}
+.detailed{
+  margin-top:25rpx;
+  padding: 15rpx;
+  border:1opx solid red;
+  width:220rpx;
+  height:200rpx;
+}
+.fd{
+  margin-top:62rpx;
+}
+.fdDetail{
+  margin-top: 15rpx;
+}
+.fdDetail image{
+  width:15px;
+  height:22px;
+}
+.fdTitle{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left:59rpx;
+
+}
+.fdHouse image{
+  width:20px;
+  height:20px;
+}
+.fdTime image{
+  width:22px;
+  height:18px;
+}
+.fdKey image{
+  width:18px;
+  height:22px;
+}
+.shenglue{
+  text-overflow: ellipsis;
+}
+.touxiang image{
+  width:51px;
+  height:51px;
+}
+.touxiang navigator{
+  color:#167F77;
+}
+.gussComment{
+  margin-top:96rpx;
+}
+.guss{
+  font-size:21px;
+}
+.wentou{
+  font-weight: bold;
+  font-size: 18px;
+}
+.wen{
+  font-size: 16px;
+}
+.housePlace{
+  margin-top:96rpx;
+}
+.placeDetails image{
+  width:747rpx;
+  height:549rpx;
+}
+
+.footDetails{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  background: white;
+}
+.liulan{
+  position:absolute;
+  top:66rpx;
+}
+/*打分*/
+.stop-star{
+  position:absolute;
+}
+.start-after{
+  color:#e2e2e2;
+}
+.start-before{
+  color:#f19e38;
+  position: absolute;
+  bottom:17rpx;
+  left: 0;
+  width: 75%;
+  overflow: hidden;
+}
+.seeDate{
+  float:right;
+}
+.seeDate button{
+  background:#FE595D;
+  padding:10rpx;
+  color:white;
+  width:333rpx;
+}

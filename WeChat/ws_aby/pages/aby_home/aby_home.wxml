@@ -1,0 +1,44 @@
+<!--顶部图片 + 入住日期-->
+<view class="index_bigphoto">
+  <view class="whiteText">
+    <text>Airbnb 爱彼迎</text>
+  </view>
+  <view class="white">
+    <text>全球500万民宿任你挑</text>
+  </view>
+</view>
+<view class="findHouse">
+  <view class='inputPlace'>
+    <input type='text' placeholder='输入目的地、城市或景点'></input>
+    <view class='houseDate'>
+      <text>入住日期</text>
+      <text class='backDate'>0晚</text>
+      <text class='backDate'>退房日期</text>
+      <button>查找房源</button>
+    </view>
+  </view>
+</view>
+<!--探索房源-->
+<view>
+ <text class='searchHouse'>探索全球优质房源</text>
+ <view><text>从城堡、树屋到公寓，总有一款适合你</text></view>
+ <view wx:for="{{cardlist}}" wx:key="item.id">
+ <!--轮播图-->
+  <swiper autoplay interval='2000' indicator-dots>
+    <swiper-item wx:for="{{imglist}}" wx:key="item.id">
+      <image src="{{item.img_url}}" mode='aspectFill' bindtap='handleDetails'></image>
+    </swiper-item>
+  </swiper>
+  <text>{{item.title}}</text>
+  <view>
+    <text class='cardTitle'>{{item.family_title}}</text>
+  </view>
+  <view class="">
+    <text>￥{{item.price}}·免费取消预订</text>
+  </view>
+  <view>
+    <text>★★★★★184</text>
+  </view>
+ </view>
+</view>
+<view><button class="getMore" bindtap='handleGet'>获取更多房源</button></view>

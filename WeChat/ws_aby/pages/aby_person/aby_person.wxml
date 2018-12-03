@@ -1,0 +1,16 @@
+<!--pages/aby_person/aby_person.wxml-->
+<view class="person">
+<view class='personTou'>
+  <image src="http://localhost:8000/tubiao/touxiang.png"></image>
+</view>
+  <view class="resLogin">
+    <button>注册或登录</button>
+  </view>
+</view>
+<view class="personDetails">
+  <swiper autoplay interval='2000' indicator-dots>
+    <swiper-item wx:for="{{personList}}" wx:key="item.id">
+      <image src="{{item.img_url}}" class='mydetails'></image>
+    </swiper-item>
+  </swiper>
+</view>

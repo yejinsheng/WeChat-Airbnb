@@ -1,0 +1,172 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : xz
+Source Server Version : 50505
+Source Host           : localhost:3306
+Source Database       : aby
+
+Target Server Type    : MYSQL
+Target Server Version : 50505
+File Encoding         : 65001
+
+Date: 2018-10-30 10:16:49
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS tedu;
+CREATE DATABASE tedu CHARSET=UTF8;
+USE tedu;
+-- ----------------------------
+-- Table structure for aby_city
+-- ----------------------------
+DROP TABLE IF EXISTS `aby_city`;
+CREATE TABLE `aby_city` (
+  `countryid` int(11) DEFAULT NULL,
+  `cityid` int(11) NOT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`cityid`),
+  KEY `countryid` (`countryid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of aby_city
+-- ----------------------------
+INSERT INTO `aby_city` VALUES ('10', '101', '重庆');
+INSERT INTO `aby_city` VALUES ('10', '102', '北京');
+INSERT INTO `aby_city` VALUES ('10', '103', '杭州');
+INSERT INTO `aby_city` VALUES ('10', '104', '成都');
+INSERT INTO `aby_city` VALUES ('10', '105', '台北');
+INSERT INTO `aby_city` VALUES ('20', '201', '巴黎');
+INSERT INTO `aby_city` VALUES ('20', '202', '尼斯');
+INSERT INTO `aby_city` VALUES ('20', '203', '戛纳');
+INSERT INTO `aby_city` VALUES ('20', '204', '里昂');
+INSERT INTO `aby_city` VALUES ('30', '301', '东京');
+INSERT INTO `aby_city` VALUES ('30', '302', '北海道');
+INSERT INTO `aby_city` VALUES ('30', '303', '大阪');
+INSERT INTO `aby_city` VALUES ('30', '304', '奈良');
+INSERT INTO `aby_city` VALUES ('40', '401', '曼谷');
+INSERT INTO `aby_city` VALUES ('40', '402', null);
+INSERT INTO `aby_city` VALUES ('40', '403', null);
+INSERT INTO `aby_city` VALUES ('40', '404', null);
+INSERT INTO `aby_city` VALUES ('50', '501', '伦敦');
+INSERT INTO `aby_city` VALUES ('50', '502', null);
+INSERT INTO `aby_city` VALUES ('50', '503', null);
+INSERT INTO `aby_city` VALUES ('50', '504', null);
+INSERT INTO `aby_city` VALUES ('60', '601', '纽约');
+INSERT INTO `aby_city` VALUES ('60', '602', '洛杉矶');
+INSERT INTO `aby_city` VALUES ('60', '603', '旧金山');
+INSERT INTO `aby_city` VALUES ('60', '604', null);
+
+-- ----------------------------
+-- Table structure for aby_country
+-- ----------------------------
+DROP TABLE IF EXISTS `aby_country`;
+CREATE TABLE `aby_country` (
+  `countryid` varchar(255) NOT NULL,
+  `country` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`countryid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of aby_country
+-- ----------------------------
+INSERT INTO `aby_country` VALUES ('10', '中国');
+INSERT INTO `aby_country` VALUES ('20', '法国');
+INSERT INTO `aby_country` VALUES ('30', '日本');
+INSERT INTO `aby_country` VALUES ('40', '泰国');
+INSERT INTO `aby_country` VALUES ('50', '英国');
+INSERT INTO `aby_country` VALUES ('60', '美国');
+
+-- ----------------------------
+-- Table structure for aby_housedetails
+-- ----------------------------
+DROP TABLE IF EXISTS `aby_housedetails`;
+CREATE TABLE `aby_housedetails` (
+  `cityid` int(11) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `family_title` varchar(255) DEFAULT NULL,
+  `xiang` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of aby_housedetails
+-- ----------------------------
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('101', 'img/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg', '79', '【华夏】恒福文化区独门花园oft古典', '整间阁楼·1室1床1卫', 'touxiang/nv1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('102', 'img/d585de1a-6bfa-4a2b-aa48-c7eccecb1a31.jpg', '66', '二环里北京胡同独门独院什刹海，鼓楼都靠近中心', '独立房间·1室2床1卫', 'touxiang/nan1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('103', 'img/7f1e0bc8-6b4c-465d-bca7-487e46997b86.jpg', '270', '西湖之巅零距离海景房|西湖、地铁站、河边走一走', '整套酒店式公寓·1室2床1卫', 'touxiang/nv2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('104', 'img/1e8a3dec-ca92-4961-aabd-d1286e9dce95.jpg', '138', '成都柴犬汪星人和英短喵星人的屋顶花园乐园值得你拥有', '独立房间·1室1床1卫', 'touxiang/nan2.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('501', 'img/49615eb5-e197-4d1f-8c8c-0331b4d2df77.jpg', '637', 'Stylish room /10 mins to Big Ben', '独立房间·1室1床1.5卫', 'touxiang/nv3.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('301', 'img/5bd2be5a-c3c9-48d7-8294-b7d3a01b312d.jpg', '381', '新宿!免费 Wi-Fi + 优越的地理位置 + 干净的房间!', '整套公寓·1室2床1卫', 'touxiang/couple1.jpg');
+INSERT INTO `aby_housedetails` VALUES ('201', 'img/ea9ceb4c-a8e4-4eb2-925b-ee8f9f99fc16.jpg', '873', 'Modern Upscale Flat Eiffel Beaugrenelle', '整套公寓·1室1床1卫', 'touxiang/couple2.jpg');
+
+-- ----------------------------
+-- Table structure for aby_user
+-- ----------------------------
+DROP TABLE IF EXISTS `aby_user`;
+CREATE TABLE `aby_user` (
+  `uid` int(11) NOT NULL,
+  `uname` varchar(32) DEFAULT NULL,
+  `upwd` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `user_name` varchar(255) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of aby_user
+-- ----------------------------
+INSERT INTO `aby_user` VALUES ('1', 'dingding', '123456', 'ding@qq.com', '13511011000', '丁春秋', 'touxiang/default.png', '0');
+INSERT INTO `aby_user` VALUES ('2', 'dangdang', '123456', 'dang@qq.com', '13501234568', '当当喵', 'touxiang/default.png', '1');
+INSERT INTO `aby_user` VALUES ('3', 'doudou', '123456', 'dou@qq.com', '13501234569', '窦志强', 'touxiang/default.png', '1');
+INSERT INTO `aby_user` VALUES ('5', '1111', '111111', '441977193@qq.com', '18357100796', '', '', '');
+INSERT INTO `aby_user` VALUES ('6', 'ABCD', '123456', '123@qq.com', '13538894495', '', '', '');
+INSERT INTO `aby_user` VALUES ('7', 'mohk', '123456', '11@qq.com', '13512312312', '', '', '');
+INSERT INTO `aby_user` VALUES ('8', '121123', 'w13945128995', '491000888@qq.com', '13213389258', '', '', '');
+INSERT INTO `aby_user` VALUES ('9', '555555', '5555555', '55555555@163.com', '13400000000', '', '', '');
+INSERT INTO `aby_user` VALUES ('10', 'xuyong', '123456', '123456789@qq.com', '15525623622', '', '', '');
+INSERT INTO `aby_user` VALUES ('11', 'admin', 'cxy930123', 'mail@xingyu1993.cn', '13580510164', '', '', '');
+INSERT INTO `aby_user` VALUES ('12', 'siyongbo', '900427', '616188545@qq.com', '18447103998', '', '', '');
+INSERT INTO `aby_user` VALUES ('13', 'qwerty', '123456', '1091256014@qq.com', '15617152367', '', '', '');
+INSERT INTO `aby_user` VALUES ('14', 'dingziqiang', '456456', '996534706@qq.com', '15567502520', '', '', '');
+INSERT INTO `aby_user` VALUES ('15', 'hdb2264068', 'huang123', '471062503@qq.com', '18898405759', '', '', '');
+INSERT INTO `aby_user` VALUES ('16', 'wenhua', '654321', 'liwenhua@tedu.cn', '15012345678', '', '', '');
+INSERT INTO `aby_user` VALUES ('17', '<img>', 'cxy930123', 'mail@xingyu1993.cn.1', '11111111111', '', '', '');
+INSERT INTO `aby_user` VALUES ('18', '</body>', 'cxy930123', 'mail@xingyu1993.cn.2', '22222222222', '', '', '');
+INSERT INTO `aby_user` VALUES ('19', '<img src=@>', 'cxy930123', 'mail@xingyu1993.cn.3', '33333333333', '', '', '');

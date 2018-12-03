@@ -1,0 +1,36 @@
+/* pages/searchMore/searchMore.wxss */
+.headerDetails{
+  position:fixed;
+  width:100%;
+  border:1px solid red;
+  padding-left:20px;
+  padding-top:10px;
+  background: white;
+  z-index:99;
+}
+.header{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid #62A0A7;
+  width:80%;
+}
+.headerDetails input{
+  padding:35rpx;
+  font-size:12px;
+  height:10rpx;
+  width:65%;
+}
+.headerDetails navigator{
+  color:#62A0A7;
+  font-size:14px;
+}
+.card{
+  display: flex;
+  justify-content:space-between;
+  padding-right:36px;
+}
+.card navigator{
+  font-size: 18px;
+  color:black;
+}

@@ -1,0 +1,20 @@
+.my_header{
+    width:100%;
+    height:100%;
+}
+.my_right{
+    width:336px;
+    height:440px;
+    border:1px solid red;
+    float:right; 
+}
+.right_input{
+    width:158px;
+    height:38px;
+    display:inline-block;
+}
+.price{
+    padding:5px 0;
+    font-weight: bold;
+    color:#333;
+}

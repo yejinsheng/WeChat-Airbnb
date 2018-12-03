@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <div id="my_header">
+        <a href="#">
+            <span class="house_header">人民币</span>
+        </a>
+        <a href="#">
+            <span class="house_header">手机端</span>
+        </a>
+        <a href="#">
+            <span class="house_header">发布房源/体验</span>
+        </a>
+        <a href="#">
+            <span class="house_header">故事</span>
+        </a>
+        <a href="#">
+            <span class="house_header">赚取旅行基金</span>
+        </a>
+        <a href="#">
+            <span class="house_header">帮助</span>
+        </a>
+        <a href="javascript:open()">
+            <span class="house_header">注册</span>
+        </a>
+        <a href="#" class="deng">
+            <span class="house_header">登录</span>
+        </a>
+        <a href="#" style="display:none" class="user_name house_header"">Welcome <span id="uname"></span></a>
+        <!--<a id="btnSignout" href="javascript:;">注销</a>-->
+    </div>
+
+    <div id="regisiterDiv" class="reg">
+        <div id="regDiv">
+            <table id="regtable" cellspacing="0px" cellpadding="1px" align="center">
+                <caption>
+                    <h4>注册爱彼迎账号</h4>
+                </caption>
+                <tr>
+                    <td align="left">已有账号?</td>
+                    <td align="right">
+                        <a href="javascript:open2();" style="color:blue;">登录</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" onclick="close1()" value="手机注册">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" onclick="close1()" value="微信注册">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="#" style="color:#666;font-size:12px;">使用其他方式扫描</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="loginDiv" class="reg">
+        <div id="logDiv">
+            <table id="logtable" cellspacing="0px" cellpadding="1px" align="left">
+                <caption>
+                    <h4>登录爱彼迎</h4>
+                </caption>
+                <tr>
+                    <td align="left">
+                        <span>还没有账号?</span>
+                    </td>
+                    <td align="right">
+                        <a href="javascript:open2();" style="color:blue;">注册</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" onclick="close2()" value="微信登录">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="text" placeholder="手机号码/邮箱地址" class="uname">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="text" placeholder="密码" class="upwd">
+                    </td>
+                </tr>
+                <tr id="infoTd">
+                    <td>
+                        <input type="checkbox" value="记住我">记住我</td>
+                    <td align="right">
+                        <div id="forgword">
+                            <a href="#" style="color:#03A9F4">手机动态密码登录</a>|
+                            <a href="#" style="color:#03A9F4">忘记密码？</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="登录" class="login">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="#" style="color:#666;font-size:12px;">使用其他方式登录</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
